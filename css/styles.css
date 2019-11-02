@@ -32,11 +32,10 @@ body::-webkit-scrollbar-thumb {
 #containerhome {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto 2fr;
+  grid-template-rows: auto auto auto auto auto 2fr;
   grid-template-columns: 15% auto 15%;
   grid-template-areas:
-    ". . ."
-    ". logo ."
+        ". logo ."
     ". welcome ."
     ". photo ."
     ". intro ."
@@ -49,6 +48,7 @@ body::-webkit-scrollbar-thumb {
 
 #logo {
   grid-area: logo;
+  margin-top: 10px;
 }
 
 #welcome {
@@ -492,7 +492,7 @@ input[type="submit"]:hover {
 @media (max-width: 576px) {
 
   #logo img.logo {
-    height: 50px;
+    height: 60px;
   }
 
   h1.myname {
@@ -504,9 +504,8 @@ input[type="submit"]:hover {
   }
 
   #containerhome {
-    height: 100vh;
-    grid-template-columns: 5% auto 5%;
-    grid-template-rows: auto auto auto auto auto auto 4fr;
+    /* height: 100vh; */
+    grid-template-columns: 5% auto 5%;   
   }
 
   .sidebar-box {
