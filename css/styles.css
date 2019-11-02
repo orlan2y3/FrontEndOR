@@ -504,7 +504,7 @@ input[type="submit"]:hover {
   }
 
   #containerhome {
-    /* height: 100vh; */
+    height: 90vh;
     grid-template-columns: 5% auto 5%;   
   }
 
