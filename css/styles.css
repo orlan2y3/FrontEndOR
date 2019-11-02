@@ -32,10 +32,10 @@ body::-webkit-scrollbar-thumb {
 #containerhome {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto auto auto auto auto 2fr;
+  grid-template-rows: repeat(5, auto) 2fr;
   grid-template-columns: 15% auto 15%;
   grid-template-areas:
-        ". logo ."
+    ". logo ."
     ". welcome ."
     ". photo ."
     ". intro ."
@@ -70,7 +70,11 @@ body::-webkit-scrollbar-thumb {
 
 #skillsLink {
   grid-area: skillsLink;
-  align-self: end;
+  align-self: flex-end;   
+}
+
+#skillsLink a p{
+  margin-bottom: 30px;
 }
 
 #logo img.logo {
