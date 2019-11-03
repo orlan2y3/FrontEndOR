@@ -1,11 +1,12 @@
-//Remove class to my arrow down in home section
-$('.fa-chevron-down').hover(
-  function () { $(this).removeClass('animated') }
-)
+// Remove class to my arrow down in home section
+  let arrow = document.querySelector('.fa-chevron-down');
+  arrow.onmouseover = function(){
+    this.classList.remove('animated');
+  }
 
 //In movil divices if i click reed more add margin to skills section
 $(".button").click(function () {
-  $("#containerskills").css({ "margin-top": "80vh" });
+  $("#containerskills").css({ "margin-top": "60vh" });
 });
 
 
