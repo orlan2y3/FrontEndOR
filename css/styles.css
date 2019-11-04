@@ -142,8 +142,8 @@ p.aboutme {
   color: #0e76a8;
 }
 
-#social a i.fa-envelope:hover {
-  color: #B23121;
+#social a i.fa-github:hover {
+  color: #6e5494;
 }
 
 #skillsLink a {
