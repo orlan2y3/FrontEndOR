@@ -1,13 +1,13 @@
 // Remove class to my arrow down in home section
-  let arrow = document.querySelector('.fa-chevron-down');
-  arrow.onmouseover = function(){
+  document.querySelector('.fa-chevron-down').onmouseover = function(){
     this.classList.remove('animated');
   }
 
 //In movil divices if i click reed more add margin to skills section
-$(".button").click(function () {
-  $("#containerskills").css({ "margin-top": "60vh" });
-});
+document.querySelector('.button').onclick = function(){
+  document.querySelector('#containerskills').style.marginTop = "60vh";
+};
+
 
 
 // Code for red more in mobile divices
