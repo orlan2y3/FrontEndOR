@@ -329,6 +329,18 @@ div.skillstitle hr {
   transition: .5s ease-in-out;
 }
 
+#card1 p,   
+#card2 p{
+  top: 35%;
+  color: #fff0f5;
+}
+
+#card1 p:hover,
+#card2 p:hover{
+  color: #ff6347;
+  font-weight: 600;
+}
+
 .overlay {
   position: absolute;
   top: 50%;
