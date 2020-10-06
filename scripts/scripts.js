@@ -8,8 +8,6 @@ document.querySelector('.button').onclick = function(){
   document.querySelector('#containerskills').style.marginTop = "60vh";
 };
 
-
-
 // Code for red more in mobile divices
 $(function () {
   var $el, $ps, $up, totalHeight;
