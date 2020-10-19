@@ -331,14 +331,18 @@ div.skillstitle hr {
 
 #card1 h4,   
 #card2 h4,
-#card3 h4{
+#card3 h4,
+#card4 h4,
+#card5 h4{
   top: 35%;
   color: #fff0f5;
 }
 
 #card1 h4:hover,
 #card2 h4:hover,
-#card3 h4:hover{
+#card3 h4:hover,
+#card4 h4:hover,
+#card5 h4:hover{
   color: #ff6347;
   font-weight: 600;
 }
