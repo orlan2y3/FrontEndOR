@@ -330,13 +330,15 @@ div.skillstitle hr {
 }
 
 #card1 h4,   
-#card2 h4{
+#card2 h4,
+#card3 h4{
   top: 35%;
   color: #fff0f5;
 }
 
 #card1 h4:hover,
-#card2 h4:hover{
+#card2 h4:hover,
+#card3 h4:hover{
   color: #ff6347;
   font-weight: 600;
 }
@@ -405,6 +407,22 @@ div.skillstitle hr {
   color: #553C7B;
   font-size: 40px;
 }
+
+.overlay i.fa-windows {
+  color: #00a2ed;
+  font-size: 40px;
+}
+
+.overlay i.fa-desktop {
+  color: #81c046;
+  font-size: 40px;
+}
+
+.overlay i.fa-git-square {
+  color: #AD5C51;
+  font-size: 40px;
+}
+
 
 /* END Styles of Projects Section*/
 /*Styles for Contacts me Section*/
