@@ -76,13 +76,14 @@ class sendEmail{
     /**Hacemos el envio del correo */
     send(){
         let validar = this._validar();
-        
+        let clase = this;
         /**Si la data esta correcta */
         if(validar.status == 200){
             $.post(this._url, this._data, function(res){
                 /**Si se envia el mensaje */
                 if(res.status == 200){
                     alert('El email se envio correctamante');
+                    clase.formReset();
                 }else{
                     /**res.message viene sel server, para notificar de que no se envio */
                     alert(res.message);
@@ -92,6 +93,11 @@ class sendEmail{
             /**Cuando el cliente no ha completado el form correctamente */
             alert(validar.message);
         }
+    }
+
+    /**Limpiamos los datos del formulario */
+    formReset(){
+        $('.jackInTheBox').trigger('reset');
     }
 
     /**Para obtener los datos del formulario */
