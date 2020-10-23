@@ -682,12 +682,11 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 }
 
-/* CSS agregado por maicol */
+/* CSS para el envio de correo */
 .frm-required{
   border: 1px solid red !important;
 }
 
-/* para el div del mensaje de error o enviado con exito */
 .message-status{
   margin-bottom: 10px;
   margin-top: 10px;
