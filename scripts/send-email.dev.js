@@ -1,7 +1,7 @@
 class sendEmail{
     
     constructor(){
-        /**Api url desde la cual envaremos el correo*/
+        /**Api url desde la cual enviaremos el correo*/
         this._url       = 'https://maicoltf.com/API/send_email.php';
         this._name      = '';
         this._email     = '';
