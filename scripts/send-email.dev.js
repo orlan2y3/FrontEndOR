@@ -88,8 +88,11 @@ class sendEmail{
                     /**res.message viene sel server, para notificar de que no se envio */
                     alert(res.message);
                 }
+
+                $("#contactform").find('.btn-send-message').attr('disabled', false);
             });
         }else{
+            $("#contactform").find('.btn-send-message').attr('disabled', false);
             /**Cuando el cliente no ha completado el form correctamente */
             alert(validar.message);
         }
@@ -117,6 +120,7 @@ class sendEmail{
         
         $("#contactform").find('.btn-send-message').off('click');
         $("#contactform").find('.btn-send-message').on('click', function(){
+            $(this).attr('disabled', true);
             /**Obtenemos los datos del form 
              * Se declara la variable clase para ifualar al objeto, porque si dentro de este evento click hacemos "this", seria equivalente al elemento que se le este dando clicn y no a la clase js como tal
             */
