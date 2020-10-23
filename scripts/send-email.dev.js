@@ -1,7 +1,7 @@
 class sendEmail{
     
     constructor(){
-        /**Api url desde la cual enviaremos el correo*/
+        /**Api url desde la cual envaremos el correo*/
         this._url       = 'https://maicoltf.com/API/send_email.php';
         this._name      = '';
         this._email     = '';
@@ -19,7 +19,7 @@ class sendEmail{
     }
 
      /** Seteamos el email */
-     email(email){
+    email(email){
         this._email  = (typeof email !== "undefined") ? email : '' ;
         return this;
     }
@@ -42,7 +42,10 @@ class sendEmail{
         /**Mensajes de error a mostrar */
         const textName    = 'El nombre es requerido (Debe tener al menos 4 caracteres)';
         const textEmail   = 'Dirección de email incorrecta';
-        const requiredClass = 'frm-required';
+        const requiredClass = 'frm-required'; 
+
+        /**Validacion basica para el email */
+        var regexEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
         
         /**Obtenemos los datos del form */
         let formData = this.formData();
@@ -50,15 +53,15 @@ class sendEmail{
         /**Quitamos las clases de validacion */
         formData.name.removeClass(requiredClass);
         formData.email.removeClass(requiredClass);
-
+ 
         if(this._name == ""){
             /**Si el nombre esta vacio */
-            formData.name.addClass(requiredClass);
+            formData.name.addClass(requiredClass).focus();
             res.message = textName; 
-        }else if(this._email == ''){
+        }else if(this._email == '' || !regexEmail.test(this._email)){
             /**Si el email esta vacio */
             res.message = textEmail;
-            formData.email.addClass(requiredClass);
+            formData.email.addClass(requiredClass).focus();
         }else{
             /**Si todo va bien */
             res.message = '';
@@ -77,24 +80,43 @@ class sendEmail{
     send(){
         let validar = this._validar();
         let clase = this;
+
+        /**Aqui mostraremos el status del mensaje */
+        const contentStatusMessage = $('.message-status');
+        /**Capturamos el boton de enviar */
+        const buttonSend    = $("#contactform").find('.btn-send-message');
+        /**Removemos las clases*/
+        const classToRemove = 'error sending sent';
+
         /**Si la data esta correcta */
         if(validar.status == 200){
+            contentStatusMessage.removeClass(classToRemove);
+            contentStatusMessage.addClass('sending')
+                                .text('Enviando su email, por favor espere...')
+                                .show();
             $.post(this._url, this._data, function(res){
                 /**Si se envia el mensaje */
-                if(res.status == 200){
-                    alert('El email se envio correctamante');
+                if(res.status == 200){ 
+                    contentStatusMessage.addClass('sent')
+                                        .text('El email se envio correctamante')
+                                        .show();
                     clase.formReset();
                 }else{
                     /**res.message viene sel server, para notificar de que no se envio */
-                    alert(res.message);
+                    contentStatusMessage.addClass('error')
+                                        .text(res.message)
+                                        .show(); 
                 }
 
-                $("#contactform").find('.btn-send-message').attr('disabled', false);
+                buttonSend.attr('disabled', false);
             });
         }else{
-            $("#contactform").find('.btn-send-message').attr('disabled', false);
+            contentStatusMessage.removeClass(classToRemove);
+            buttonSend.attr('disabled', false);
             /**Cuando el cliente no ha completado el form correctamente */
-            alert(validar.message);
+            contentStatusMessage.addClass('error')
+                                        .text(validar.message)
+                                        .show(); 
         }
     }
 
@@ -117,6 +139,10 @@ class sendEmail{
     init(){
 
         let clase = this; // this = sendEmail
+       
+        $(".message-status ").on('click', function(){
+            $(this).hide();
+        });
         
         $("#contactform").find('.btn-send-message').off('click');
         $("#contactform").find('.btn-send-message').on('click', function(){
