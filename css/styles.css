@@ -541,6 +541,38 @@ input[type="submit"]:hover, .btn-send-message:hover {
   font-size: 1.5rem;
 }
 
+/* CSS para el envio de correo */
+.frm-required{
+  border: 1px solid red !important;
+}
+
+.message-status{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.message-status.error{
+  background: red;
+}
+
+.message-status.sending{
+  background: #765c22;
+}
+
+.message-status.sent{
+  background: #598f28;
+}
+
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*MEDIA*/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+
 @media (max-width: 576px) {
 
   #logo img.logo {
@@ -616,6 +648,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
       "card5"
       "card6";
     margin-top: 100vh;
+    padding-top: 70%;
   }
 
   .proline {
@@ -629,7 +662,8 @@ input[type="submit"]:hover, .btn-send-message:hover {
 
   #containercontactme {
     margin-top: 95vh;
-    padding: 0 10px;
+    padding: 70% 0 10px;
+     
   }
 
   #thanks p:first-child {
@@ -645,7 +679,12 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 }
 
+
 @media (min-width: 768px) {
+
+  #containerskills{   
+    padding-top: 15%;
+  }
 
   #containerprojects {
     grid-template-rows: auto auto auto auto;
@@ -655,13 +694,13 @@ input[type="submit"]:hover, .btn-send-message:hover {
       ". card1 card2 ."
       ". card3 card4 ."
       ". card5 card6 ."
-    ;
-  }
-
+    ;     
+  } 
   .proline {
     width: 26%;
     margin-left: 37%;
-  }
+  }   
+
 }
 
 @media (min-width: 992px) {
@@ -673,37 +712,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
       ". protitle protitle protitle ."
       ". card1 card2 card3 ."
       ". card4 card5 card6 ."
-    ;
+    ;    
   }
-
   .proline {
     width: 17%;
     margin-left: 41.5%;
   }
-}
-
-/* CSS para el envio de correo */
-.frm-required{
-  border: 1px solid red !important;
-}
-
-.message-status{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.message-status.error{
-  background: red;
-}
-
-.message-status.sending{
-  background: #765c22;
-}
-
-.message-status.sent{
-  background: #598f28;
 }
