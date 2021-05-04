@@ -712,10 +712,14 @@ input[type="submit"]:hover, .btn-send-message:hover {
       ". protitle protitle protitle ."
       ". card1 card2 card3 ."
       ". card4 card5 card6 ."
-    ;    
+    ;  
   }
   .proline {
     width: 17%;
     margin-left: 41.5%;
-  }
+  } 
+
+  #containerskills{
+    padding-top: 0%
+  } 
 }
