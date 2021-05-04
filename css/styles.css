@@ -699,8 +699,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
   .proline {
     width: 26%;
     margin-left: 37%;
-  }   
-
+  }
 }
 
 @media (min-width: 992px) {
