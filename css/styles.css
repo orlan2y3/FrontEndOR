@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 #skillsLink {
   grid-area: skillsLink;
-  align-self: flex-end;   
+  align-self: flex-end;
 }
 
 #skillsLink a p{
@@ -590,6 +590,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
   #containerhome {
     height: 100vh;
     grid-template-columns: 5% auto 5%;   
+  }
+
+  #skillsLink {
+   align-self: flex-start;
   }
 
   .sidebar-box {
