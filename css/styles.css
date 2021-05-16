@@ -133,7 +133,7 @@ div .skillstitle {
 hr.line {
   height: 3px;
   background-color: #ff6347;
-  border: none;
+  border: none; 
 }
 
 div.skillstitle h1,
@@ -167,7 +167,7 @@ div.skillstitle hr {
   display: grid;
   padding: 15px;
   color: #fff0f5;
-  transition-duration: 0.7s;
+  transition-duration: 0.7s;   
 }
 
 .efect:hover {
