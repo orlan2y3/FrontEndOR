@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   background-color: #232c3d;
@@ -21,26 +27,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ****************************************** */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Styles block for Home section*/
 #containerhome {
   height: 100vh;
   display: grid;
-  grid-template-rows: repeat(5, auto) 2fr;
+  grid-template-rows: repeat(6, auto) 2fr;
   grid-template-columns: 15% auto 15%;
-  grid-template-areas:
+  grid-template-areas:  
     ". logo ."
     ". welcome ."
-    ". photo ."
-    ". intro ."
-    ". social ."
-    ". skillsLink .";
+    ". photo ."    
+    ". social .";
   justify-content: center;
   text-align: center;
   grid-row-gap: 10px;
@@ -59,22 +56,8 @@ body::-webkit-scrollbar-thumb {
   grid-area: photo;
 }
 
-#intro {
-  grid-area: intro;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0);
-}
-
 #social {
   grid-area: social;
-}
-
-#skillsLink {
-  grid-area: skillsLink;
-  align-self: flex-end;
-}
-
-#skillsLink a p{
-  margin-bottom: 30px;
 }
 
 #logo img.logo {
@@ -92,20 +75,6 @@ h1.myname {
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: 1.5px;
-}
-
-p.aboutme {
-  color: #fff0f5;
-  text-align: justify;
-  line-height: 1.5rem;
-  font-weight: 400;
-  padding: 0 10px 10px 10px;
-  margin: 0;
-  letter-spacing: 1.5px;
-}
-
-#intro p a.button {
-  display: none;
 }
 
 #social {
@@ -144,26 +113,6 @@ p.aboutme {
 
 #social a i.fa-github:hover {
   color: #6e5494;
-}
-
-#skillsLink a {
-  color: #fff0f5;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-  transition-duration: 0.6s;
-}
-
-#skillsLink p {
-  margin-bottom: 10px;
-}
-
-#skillsLink a:hover {
-  color: #ff6347;
-}
-
-#skillsLink a i {
-  color: #ff6347;
-  font-size: 30px;
 }
 
 /* END Styles of Home section*/
@@ -592,44 +541,9 @@ input[type="submit"]:hover, .btn-send-message:hover {
     grid-template-columns: 5% auto 5%;   
   }
 
-  #skillsLink {
-   align-self: flex-start;
-  }
-
-  .sidebar-box {
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-  }
-
-  #social a i {
+   #social a i {
     font-size: 25px;
     margin-right: 10px;
-  }
-
-  .sidebar-box .read-more {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 5px 0;
-    background-image: linear-gradient(to bottom, transparent, #232c3d);
-  }
-
-  p.read-more a {
-    color: #ff6347;
-    border-left: 15px solid #ff6347;
-    border-right: 15px solid #ff6347;
-    padding: 0 5px;
-    font-weight: 800;
-    text-decoration: none;
-    margin-top: 50px;
-  }
-
-  #intro p a.button {
-    display: inline-block;
   }
 
   div#containerskills {
