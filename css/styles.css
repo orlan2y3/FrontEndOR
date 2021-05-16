@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   display: grid;  
   grid-template-rows: repeat(4, auto) 2fr;
-  grid-template-columns: 15% auto 15%;
+  grid-template-columns: 20% auto 20%;
   grid-template-areas:  
     ". logo ."
     ". welcome ."
@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 #logo {
   grid-area: logo;
-  margin-top: 10px;
+  margin-top: 20vh;
 }
 
 #welcome {
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #social {
-  grid-area: social;
+  grid-area: social;  
 }
 
 #logo img.logo {
@@ -75,11 +75,6 @@ h1.myname {
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: 1.5px;
-}
-
-#social {
-  margin-top: 15px;
-  border-top: 1px solid #ff6347;
 }
 
 #social a i {
@@ -115,7 +110,7 @@ h1.myname {
   color: #6e5494;
 }
 
-/* END Styles of Home section*/
+/* ****************************************** */
 /*Styles for Skills Section*/
 
 #containerskills {
@@ -207,7 +202,7 @@ div.skillstitle hr {
   letter-spacing: 2px;
 }
 
-/* END Styles of Skills Section*/
+/* ****************************************** */
 /*Styles for Priojects Section*/
 
 #containerprojects {
@@ -391,7 +386,7 @@ div.skillstitle hr {
 }
 
 
-/* END Styles of Projects Section*/
+/* ****************************************** */
 /*Styles for Contacts me Section*/
 
 #containercontactme {
@@ -490,6 +485,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
   font-size: 1.5rem;
 }
 
+/* ****************************************** */
 /* CSS para el envio de correo */
 .frm-required{
   border: 1px solid red !important;
