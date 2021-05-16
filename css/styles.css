@@ -30,8 +30,8 @@ body::-webkit-scrollbar-thumb {
 /* Styles block for Home section*/
 #containerhome {
   height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(6, auto) 2fr;
+  display: grid;  
+  grid-template-rows: repeat(4, auto) 2fr;
   grid-template-columns: 15% auto 15%;
   grid-template-areas:  
     ". logo ."
