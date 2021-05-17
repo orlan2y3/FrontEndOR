@@ -27,8 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ****************************************** */
-/* SVG Styles*/
-
+/*Styles block for home images and animations*/
 svg {
   position: absolute;
   top: 10%;
@@ -88,7 +87,7 @@ svg {
 }
 
 /* ****************************************** */
-/* Styles block for Home section*/
+/*Styles block for Home section*/
 #containerhome {
   height: 100vh;
   display: grid;  
@@ -152,7 +151,7 @@ h1.myname {
 }
 
 #social a i.fa-instagram:hover {
-  color: #f2003c;
+  color: #f2003c; 
 }
 
 #social a i.fa-facebook-f:hover {
