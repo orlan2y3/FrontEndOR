@@ -143,12 +143,12 @@ h1.myname {
   margin-right: 15px;
   margin-top: 15px;
   padding: 5px;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
-#social a i:hover {
+/* #social a i:hover {
   transform: rotate(360deg) scale(1.7);
-}
+} */
 
 #social a i.fa-instagram:hover {
   color: #f2003c; 
