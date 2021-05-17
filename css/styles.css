@@ -27,6 +27,67 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ****************************************** */
+/* SVG Styles*/
+
+svg {
+  position: absolute;
+  top: 10%;
+  left: 5%; 
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
+
+@keyframes float {
+	100% {
+    transform: translateY(30px);
+  }
+}
+
+.triology1{
+  animation: pulse 1s infinite ease-in-out alternate;
+  position: absolute;
+  color: #264de4;
+  font-size: 100px;
+  top: 60%;
+  left: 85%;
+  animation-delay: .4s;
+}
+
+.triology2{
+  animation: pulse 1s infinite ease-in-out alternate;
+  position: absolute;
+  color: #FF5733;
+  font-size: 100px;
+  top: 70%;
+  left: 80%;
+  animation-delay: .2s;
+}
+
+.triology3{
+  animation: pulse 1s infinite ease-in-out alternate;
+  position: absolute;
+  color: #f0db4f;
+  font-size: 100px;
+  top: 80%;
+  left: 85%;
+  animation-delay: .6s;
+}
+
+/* ****************************************** */
 /* Styles block for Home section*/
 #containerhome {
   height: 100vh;
@@ -519,6 +580,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
 /*********************************************************************************************************/
 
 @media (max-width: 576px) {
+
+  .mobil-none{
+    display: none;
+  }
 
   #logo img.logo {
     height: 60px;
