@@ -579,11 +579,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
 /*********************************************************************************************************/
 /*********************************************************************************************************/
 
-@media (max-width: 576px) {
-
-  .mobil-none{
-    display: none;
-  }
+@media (min-width: 576px) {
 
   #logo img.logo {
     height: 60px;
@@ -658,8 +654,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
 
   #containerskills{   
     padding-top: 15%;
@@ -682,7 +677,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
 }
 
 @media (min-width: 992px) {
-
+ 
   #containerprojects {
     grid-template-rows: auto auto auto;
     grid-template-columns: 15% repeat(6, auto) 15%;
@@ -700,4 +695,11 @@ input[type="submit"]:hover, .btn-send-message:hover {
   #containerskills{
     padding-top: 0%
   } 
+}
+
+/*Madia para pantallas menor que una laptop*/
+@media only screen and (max-width: 1080px) {
+  .mobil-none {
+    display: none;
+  }
 }
