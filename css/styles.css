@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ****************************************** */
-/*Styles block for home images and animations*/
+/*Styles block for HOME images and animations*/
 svg {
   position: absolute;
   top: 2%;
@@ -598,11 +598,26 @@ input[type="submit"]:hover, .btn-send-message:hover {
 /*Media Queries*/
 /*********************************************************************************************************/
 /*********************************************************************************************************/
-/*Madia para pantallas menor que una laptop*/
-@media only screen and (max-width: 1080px) {
-  .mobil-none {
-    display: none;
+
+@media only screen and (max-width: 1440px) {
+  svg {
+    width: 280px;
+    height: 400px;
   }
+  .triology1, .triology2, .triology3{   
+    font-size: 80px;   
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  svg {
+    width: 180px;
+    height: 300px;
+  }
+  .triology1, .triology2, .triology3{   
+    font-size: 60px;   
+  }
+
   /*HOME*/
   #logo img.logo {
     height: 50px;
@@ -623,6 +638,11 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*PROJECTS*/
 
   /*CONTACT*/
+}
+@media only screen and (max-width: 768px) {
+  .mobil-none{
+    display: none;
+  }
 }
 
 
