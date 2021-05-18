@@ -237,7 +237,6 @@ div #skillstitle hr {
 }
 
 .box {
-  /* box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0); */
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
   display: grid;
   padding: 15px;
@@ -276,7 +275,9 @@ div #skillstitle hr {
   align-self: center;
   letter-spacing: 2px;
 }
-
+.test1{
+  margin-top: 10px;
+}
 /* ****************************************** */
 /*Styles for Projects Section*/
 #containerprojects {
@@ -611,6 +612,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*PROJECTS*/
 
   /*CONTACT*/
+  #containercontactme {   
+    display: grid;    
+    grid-template-columns: 20% auto 20%;   
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -642,6 +647,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*PROJECTS*/
 
   /*CONTACT*/
+  #containercontactme {   
+    display: grid;    
+    grid-template-columns: 15% auto 15%;   
+  }
 }
 @media only screen and (max-width: 768px) {
   .mobil-none{
@@ -654,6 +663,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*PROJECTS*/
 
   /*CONTACT*/
+  #containercontactme {   
+    display: grid;    
+    grid-template-columns: 5% auto 5%;   
+  }
 }
 
 
