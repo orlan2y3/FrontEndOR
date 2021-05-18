@@ -26,12 +26,32 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+
+/* ****************************************** */
+/*Styles for the Navigation*/
+
+#navigator{
+  text-align: center;  
+  margin-top: 5px; 
+}
+#navigator a{  
+  color: #fff0f5;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 5px;  
+}
+#navigator .active{
+  color:#ff6347; 
+  font-weight: 800;  
+  border-bottom: 2px #fff0f5 solid; 
+}
+
 /* ****************************************** */
 /*Styles block for home images and animations*/
 svg {
   position: absolute;
-  top: 10%;
-  left: 5%; 
+  top: 2%;
+  left: 2%; 
 }
 
 #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
@@ -62,7 +82,7 @@ svg {
   color: #264de4;
   font-size: 100px;
   top: 60%;
-  left: 85%;
+  left: 90%;
   animation-delay: .4s;
 }
 
@@ -72,7 +92,7 @@ svg {
   color: #FF5733;
   font-size: 100px;
   top: 70%;
-  left: 80%;
+  left: 85%;
   animation-delay: .2s;
 }
 
@@ -82,7 +102,7 @@ svg {
   color: #f0db4f;
   font-size: 100px;
   top: 80%;
-  left: 85%;
+  left: 90%;
   animation-delay: .6s;
 }
 
@@ -130,8 +150,7 @@ svg {
 }
 
 h1.myname {
-  color: #fff0f5;
-  font-size: 2.5rem;
+  color: #fff0f5;  
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: 1.5px;
@@ -145,10 +164,6 @@ h1.myname {
   padding: 5px;
   transition-duration: 0.5s;
 }
-
-/* #social a i:hover {
-  transform: rotate(360deg) scale(1.7);
-} */
 
 #social a i.fa-instagram:hover {
   color: #f2003c; 
