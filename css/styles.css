@@ -112,7 +112,7 @@ svg {
   height: 100vh;
   display: grid;  
   grid-template-rows: repeat(4, auto) 2fr;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 10% auto 10%;
   grid-template-areas:  
     ". logo ."
     ". welcome ."
@@ -468,7 +468,6 @@ div #skillstitle hr {
 
 /* ****************************************** */
 /*Styles for Contacts me Section*/
-
 #containercontactme {
   height: 100vh;
   display: grid;
@@ -597,7 +596,6 @@ input[type="submit"]:hover, .btn-send-message:hover {
 /*Media Queries*/
 /*********************************************************************************************************/
 /*********************************************************************************************************/
-
 @media only screen and (max-width: 1440px) {
   svg {
     width: 280px;
@@ -606,6 +604,13 @@ input[type="submit"]:hover, .btn-send-message:hover {
   .triology1, .triology2, .triology3{   
     font-size: 80px;   
   }
+  /*HOME*/
+
+  /*SKILLS*/
+
+  /*PROJECTS*/
+
+  /*CONTACT*/
 }
 
 @media only screen and (max-width: 1024px) {
@@ -642,6 +647,13 @@ input[type="submit"]:hover, .btn-send-message:hover {
   .mobil-none{
     display: none;
   }
+  /*HOME*/
+
+  /*SKILLS*/
+
+  /*PROJECTS*/
+
+  /*CONTACT*/
 }
 
 
