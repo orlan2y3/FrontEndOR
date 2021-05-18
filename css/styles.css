@@ -188,7 +188,7 @@ h1.myname {
 /* ****************************************** */
 /*Styles for Skills Section*/
 #containerskills {
-  height: 80vh;
+  height: 100vh;
   width: 80%;
   margin: 10vh auto;
   display: grid;
