@@ -29,7 +29,6 @@ body::-webkit-scrollbar-thumb {
 
 /* ****************************************** */
 /*Styles for the Navigation*/
-
 #navigator{
   text-align: center;  
   margin-top: 5px; 
@@ -37,7 +36,7 @@ body::-webkit-scrollbar-thumb {
 #navigator a{  
   color: #fff0f5;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-right: 5px;  
 }
 #navigator .active{
@@ -154,6 +153,7 @@ h1.myname {
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: 1.5px;
+  font-size: 2.3em;
 }
 
 #social a i {
@@ -399,8 +399,7 @@ div #skillstitle hr {
   border: 1px solid #fff0f5;
   padding: 2px 10px;
   text-align: center;
-  border-radius: 15px;
-  font-size: 14px;
+  border-radius: 15px;  
   opacity: -1;
   transition: .3s ease-in-out;
 }
@@ -514,8 +513,7 @@ div #skillstitle hr {
   margin-bottom: 5px;
   color: #fff0f5;
   text-align: center;
-  letter-spacing: 1.5px;
-  font-size: 1.2rem;
+  letter-spacing: 1.5px;  
 }
 
 input[type="text"],
@@ -525,8 +523,7 @@ textarea[type="text"] {
   width: 100%;
   border: none;
   padding: 10px 15px;
-  background: #1E242C;
-  font-size: 1rem;
+  background: #1E242C;  
   margin-bottom: 3px;
   color: #fff0f5;
   line-height: 18px;
@@ -534,13 +531,11 @@ textarea[type="text"] {
 
 textarea[type="text"] {
   min-height: 200px;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  margin-bottom: 5px; 
 }
 
 input[type="submit"], .btn-send-message {
-  float: right;
-  font-size: 1rem;
+  float: right;  
   padding: 10px 30px;
   color: #fff0f5;
   background: transparent;
