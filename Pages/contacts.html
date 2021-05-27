@@ -17,6 +17,8 @@
   <script src="https://kit.fontawesome.com/a4e0d575b7.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   
   <script src="../scripts/send-email.min.js"></script> 
 
@@ -48,8 +50,8 @@
       <div class="message-status" style="display: none;"></div>
       <form class="animate__animated animate__jackInTheBox animate__slow" style="animation-delay: 1s;">
         <input placeholder="Name" type="text" name="name"  class='name'>
-        <input placeholder="Enter email" type="email" name="email"  class='email'>
-        <input placeholder="Your Message" type="text" name="message" class='message'>
+        <input placeholder="Enter Email" type="email" name="email"  class='email'>
+        <textarea placeholder="Your Message" type="text" name="message" class='message' cols="30" rows="10"></textarea>
         <br>
         <input class="button btn-send-message" type="button" id="submit" value="SUBMIT">
       </form>
@@ -59,6 +61,7 @@
       <p>&copy;2018 Orlando Reynoso</p>
     </div>
 
+  <script src="../scripts/scripts.js"></script> 
   </div>
 </body>
 </html>
