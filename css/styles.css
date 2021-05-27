@@ -525,8 +525,7 @@ textarea[type="text"] {
   padding: 10px 15px;
   background: #1E242C;  
   margin-bottom: 3px;
-  color: #fff0f5;  
-  font-size: 1.25em;
+  color: #fff0f5;    
 }
 
 ::placeholder{
@@ -575,7 +574,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
-  color: white;
+  color: #fff0f5;
   padding: 10px;
   cursor: pointer;
 }
