@@ -656,6 +656,9 @@ input[type="submit"]:hover, .btn-send-message:hover {
     display: none;
   }
   /*HOME*/
+  #navigator a{   
+    font-size: 1rem;     
+  }
 
   /*SKILLS*/
 
