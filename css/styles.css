@@ -9,7 +9,7 @@ html {
   background-color: #232c3d;
   font-family: 'Turret Road', cursive;
   /* Special styles to make scrollbar style work a bit on mozilla */
-  scrollbar-color: #ff6347 #161c27;
+  scrollbar-color: #ff6347 #161c27; 
 }
 
 /* Scrollbar styles doestn't work on mozilla */
@@ -31,12 +31,12 @@ body::-webkit-scrollbar-thumb {
 /*Styles for the Navigation*/
 #navigator{
   text-align: center;  
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 #navigator a{  
   color: #fff0f5;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-right: 5px;  
 }
 #navigator .active{
@@ -153,7 +153,7 @@ h1.myname {
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: 1.5px;
-  font-size: 2.3em;
+  font-size: 2.5rem;
 }
 
 #social a i {
@@ -203,6 +203,7 @@ div #skillstitle {
   color: #fff0f5;
   align-self: center;
   justify-self: center;
+  font-size: 1.25rem;
 }
 
  hr.line {
@@ -300,6 +301,7 @@ div #skillstitle hr {
   grid-area: protitle;
   color: #fff0f5;
   margin-top: 100px;
+  font-size: 1.25rem;;
 }
 
 .proline {
@@ -486,6 +488,7 @@ div #skillstitle hr {
   color: #fff0f5;
   align-self: flex-end;
   justify-self: center;
+  font-size: 1.25rem;;
 }
 
 .contactmeline {
@@ -518,7 +521,7 @@ div #skillstitle hr {
 
 input[type="text"],
 input[type="email"],
-textarea[type="text"] {
+input[type="text"] {
   display: inline-block;
   width: 100%;
   border: none;
@@ -527,9 +530,10 @@ textarea[type="text"] {
   margin-bottom: 3px;
   color: #fff0f5;
   line-height: 18px;
+  font-size: 1.25em;
 }
 
-textarea[type="text"] {
+.message {
   min-height: 200px;
   margin-bottom: 5px; 
 }
