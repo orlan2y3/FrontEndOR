@@ -188,7 +188,7 @@ h1.myname {
 /* ****************************************** */
 /*Styles for Skills Section*/
 #containerskills {
-  height: 100vh;
+  height: 100vh;  
   width: 80%;
   margin: 10vh auto;
   display: grid;
@@ -529,7 +529,8 @@ textarea[type="text"] {
 }
 
 ::placeholder{
-  font-family: 'Times New Roman', Times, serif;  
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 1rem; 
 }
 
 
@@ -607,6 +608,9 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*HOME*/
 
   /*SKILLS*/
+  #containerskills {
+    margin-top: 10vh;
+  }
 
   /*PROJECTS*/
 
@@ -642,6 +646,9 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 
   /*SKILLS*/
+  #containerskills {
+    margin-top: 10vh;
+  }
 
   /*PROJECTS*/
 
@@ -661,14 +668,35 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 
   /*SKILLS*/
+  #containerskills {
+    margin: 5vh auto;
+  }
+ 
+  #skillstitle h1, h1, h2 {
+    font-size: 1.25rem;
+  }
+
+  .proline {
+    width: 100px;
+    margin-left: 400px;
+  }
+  .box i {
+    font-size: 80px;
+  }
 
   /*PROJECTS*/
+  #protitle h1 {
+    font-size: 1.25rem;
+  }
 
   /*CONTACT*/
   #containercontactme {   
     display: grid;    
     grid-template-columns: 5% auto 5%;   
   }
+  #contactmetitle h1 {
+    font-size: 1.25rem;
+  } 
 }
 
 
