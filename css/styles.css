@@ -698,28 +698,3 @@ input[type="submit"]:hover, .btn-send-message:hover {
     font-size: 1.25rem;
   } 
 }
-
-
-/* #containerprojects {
-  grid-template-rows: repeat(6, auto);
-  grid-template-columns: auto;
-  grid-template-areas:
-    "protitle"
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6";
-  margin-top: 100vh;
-  padding-top: 70%;
-}
-
-.proline {
-  height: 3px;
-  width: 50%;
-  background-color: #ff6347;
-  border: none;
-  margin-left: 25%;
-  margin-bottom: 30px;
-} */
