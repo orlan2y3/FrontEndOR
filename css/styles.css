@@ -146,6 +146,11 @@ svg {
 #photo img {
   height: 300px;
   border-radius: 50%;
+  transition: 1s;
+}
+
+#photo img:hover {
+  transform: rotate(25deg);
 }
 
 h1.myname {
