@@ -662,6 +662,10 @@ input[type="submit"]:hover, .btn-send-message:hover {
     font-size: 1.25rem;
   } 
 
+  #thanks{
+    margin: 0 10% 0 10%;  
+  }
+
   #contactform {   
     margin: 15px 10% 0 10%;   
   }
