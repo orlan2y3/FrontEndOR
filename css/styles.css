@@ -267,8 +267,8 @@ h1.myname {
 
 .box div.logo {
   display: flex;
-  justify-self: end;
-  align-self: end;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 .box h2 {
@@ -276,9 +276,7 @@ h1.myname {
   align-self: center;
   letter-spacing: 2px;
 }
-.test1{
-  margin-top: 10px;
-}
+
 /* ****************************************** */
 /*Styles for Projects Section*/
 #protitle {  
@@ -571,9 +569,6 @@ input[type="submit"]:hover, .btn-send-message:hover {
   /*HOME*/
 
   /*SKILLS*/
-  #containerskills {
-    margin-top: 10vh;
-  }
 
   /*PROJECTS*/
 
@@ -605,10 +600,7 @@ input[type="submit"]:hover, .btn-send-message:hover {
     font-size: 26px;    
   }
 
-  /*SKILLS*/
-  #containerskills {
-    margin-top: 10vh;
-  }
+  /*SKILLS*/ 
 
   /*PROJECTS*/
 
@@ -626,26 +618,21 @@ input[type="submit"]:hover, .btn-send-message:hover {
   }
 
   /*SKILLS*/
-  #containerskills {
-    margin: 5vh auto;
-  }
- 
-  #skillstitle h1, h1, h2 {
+  #skillstitle h1, h2 {
     font-size: 1.25rem;
-  }
-
-  .contactmeline{
-    width: 135px;
-  }
-
-  .proline{
-    width: 100px;
-  }
+  } 
 
   .skillline{
     width: 60px;
   }
 
+  #containerskills {     
+    width: 90%;    
+    display: grid;
+    grid-auto-rows: minmax(250px, 1fr);
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
+  }     
  
   .box i {
     font-size: 80px;
@@ -656,11 +643,18 @@ input[type="submit"]:hover, .btn-send-message:hover {
     font-size: 1.25rem;
   }
 
-  /*CONTACT*/
- 
+  .proline{
+    width: 100px;
+  }
+
+  /*CONTACT*/ 
   #contactmetitle h1 {
     font-size: 1.25rem;
   } 
+
+  .contactmeline{
+    width: 135px;
+  }
 
   #thanks{
     margin: 0 10% 0 10%;  
@@ -669,5 +663,4 @@ input[type="submit"]:hover, .btn-send-message:hover {
   #contactform {   
     margin: 15px 10% 0 10%;   
   }
-
 }
