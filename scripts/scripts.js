@@ -58,5 +58,5 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-// Script to insert the actual year for copyright
+// Script to insert the the year for copyright
 document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))
