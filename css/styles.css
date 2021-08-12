@@ -306,8 +306,8 @@ ul > li{
 }
 
 #containerprojects {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;    
